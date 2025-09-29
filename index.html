@@ -1,108 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hallo Hi Abbonomentformulier</h1>
-    
-    
-    
-    <form action="">
-   
-    <label for="fname"> Voornaam </label><br>
-    <input type="text" id="vnaam" name="vnaam" pattern="[A-Za-z]+" title="Alleen letters toegestaan!" required> <br>
-    
-    <label for="anaam"> Achternaam </label><br>
-    <input type="text" id="anaam" name="anaam" pattern="[A-Za-z]+" title="Alleen letters toegestaan!" required> <br>
-<br>
-
-<br>
-    <label for="Dhr">Dhr</label>
-    <input type="radio" id="Dhr" name="Dhr" checked>
-    
-    <label for="Mevr">Mevr</label>
-    <input type="radio" id="Mevr" name="Mevr">
-    
-    <label for="Anders">Anders</label>
-    <input type="radio" name="Anders" id="Anders"> <br>
-    
-    <label for="Straat + Huisnummer">Straat + Huisnummer</label> <br>
-    <input type="text" id="Straat + Huisnummer" name="Straat + Huisnummer" required> <br>
-<br>
-    <label for="Postcode">Postcode</label> <br>
-    <input type="text" id="Postcode" name="Postcode" required> <br>
-
-    <label for="Woonplaats">Woonplaats</label> <br>
-    <input type="text" id="Woonplaats" name="Woonplaats" required> <br>
-<br>
-
-    <label for="Land"> Land </label> <br>
-    <input type="text" id="Land" name="Land" required> <br>
-<br>
-
-    <label for="iban"> IBAN-Nummer </label>
-    <input type="text" id="iban" name="iban" placeholder="NL00BANK1234567890" pattern=" ^NL[0-9]{2}[A-Z]{4}[0-9]{10}$ " minlength="18" maxlength="18" required title="Moet beginnen met 'NL', gevolgd door 2 cijfers, 4 hoofdletters en 10 cijfers (18 tekens)." oninput="" this.value = this.value.toUpperCase(); > <br>
-
-<br>
-
-
-    <label for="Type abbonoment"> Type Abbonoment </label> <br>
-    
-<br>
-    <label for="Mobiel"> Mobiel </label>
-    <input type="radio" id="mobiel" name="Mobiel"> 
-   
-    <label for="glasvezel"> Glasvezel </label>
-    <input type="radio" id="glasvezel" name="Glasvezel">
-
-    <label for="TV"> TV </label>
-    <input type="radio" id="TV" name="TV"> <br>
-<br>
-
-    <label for="Ingangsdatum abbonoment"> Ingangsdatum Abbonoment </label> <br>
-<br>
-
-    <input type="date" id="datum"> <br>
-<script>
-  const vandaag = new Date().toISOString().split("T")[0]; break
-  document.getElementById("datum").min = vandaag; break
-</script>
-
-<br>
-
-    <label for="looptijd">Looptijd abonnement :</label> <br>
-<input type="number" id="looptijd" name="looptijd" min="1" max="24" required> <br>
-
-<br>
-
-   <label for="gebruikers">Aantal gebruikers op het abonnement:</label> <br>
-   <input type="number" id="gebruikers" name="gebruikers" min="1" max="4" required> <br>
- 
-<br>
-
-   <label for="E-Mail Adres"> E-Mail Adres </label> <br>
-   <input type="text" id="E-mail Adres" name="E-Mail Adres" required> <br>
-
-<br>
-
-   <label for="Wachtwoord Aanmaken "> Wachtwoord Aanmaken </label> <br>
-   <input type="password" id="Wachtwoord Aanmaken" name="Wachtwoord Aanmaken" required> <br>
-
-<br>
-
-
-<br>
-
-    <input type="submit"> <br>
-
-
-    </form>
-
-
-
-    
-</body>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hallo Hi - Internet & Bellen</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="section">
+        <section class="section-left">
+          <h2 class="section-title">Het beste van Mobiel en TV.</h2>
+          <p class="section-paragraph">
+            Geen aansluitkosten en volop extra voordelen.<br />Ontdek TV &
+            Streaming op één plek. En switch gemakkelijk tussen je favoriete
+            tv-zenders, streamingdiensten en huurfilms.
+          </p>
+          <p class="section-paragraph">
+            Stap je over? Geen probleem. <a href="Gratis nummerbehoud"> Gratis nummerbehoud </a> . Jij vraagt het
+            aan, wij regelen de rest.
+          </p>
+          <ul class="section-list">
+            <li class="section-item">Onbeperkt data</li>
+            <li class="section-item">39,95/mnd</li>
+            <li class="section-item">Snelheid tot 1Gbit/s</li>
+            <li class="section-item">Stel zelf je pakket samen</li>
+          </ul>
+          <button class="section-button">Ontdek Mobiel en TV</button>
+        </section>
+      </section>
+    </main>
+  </body>
 </html>

@@ -1,0 +1,33 @@
+h2 {
+color: #9000ff;
+font-size: 56px;  
+font-weight: bold;  
+}
+
+p {
+color: #0d0303;
+font-size: 28px;
+
+}
+
+p:first-of-type{
+font-weight: bold;
+}
+
+a {
+font-size: 28px;
+text-decoration: none;
+color: #7272dd;
+}
+
+@font-face {
+    font-family:ftltlt ;
+    src: url(ftltlt-webfont.woff);
+}
+
+body {
+font-family: ftltlt;
+    
+}
+
+
